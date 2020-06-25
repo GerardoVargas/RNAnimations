@@ -11,7 +11,7 @@ const Animacion3 = () => {
         Animated.timing(
             animacion, {
                 toValue: 40, //valor al que llega
-                duration: 1500 //cantidad de tiempo en llegar
+                duration: 1000 //cantidad de tiempo en llegar
             }
         ).start() //iniciar la animacion
     }, [])
