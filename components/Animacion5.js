@@ -12,7 +12,11 @@ const Animacion5 = () => {
     }
 
     const soltarBtn = () => {
-        
+        Animated.spring(animacion, {
+            toValue: 1,
+            friction: 4, //entre mas bajo el valor, mayor es el rebote
+            tension: 60 //entre mas bajo el valor, mas suave sera la animacion
+        }).start()
     }
 
     const estiloAnimacion = {
